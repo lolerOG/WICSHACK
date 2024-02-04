@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>What will Barbie Journal Today?</title>
+  <style>
+    body {
+      font-family: Arial, sans-serif;
+      padding: 20px;
+      background-color: #E0218A /* Hot pink background color */
+    }
+
+    textarea {
+      width: 100%;
+      height: 200px;
+      margin-bottom: 20px;
+    }
+
+    button {
+      padding: 10px 20px;
+      background-color: #ff69b4;
+      color: white;
+      border: none;
+      cursor: pointer;
+    }
+
+    button:hover {
+      background-color: #E0218A;
+    }
+  </style>
+</head>
+
+<body>
+  <h1>Dear Diary,</h1>
+  <textarea id="noteContent" placeholder="What did Ken do for you today..."></textarea>
+  <button id="saveButton">SAVE YOUR NOTE!</button>
+
+  <script>
+    const saveButton = document.getElementById('saveButton');
+    const noteContent = document.getElementById('noteContent');
+
+    saveButton.addEventListener('click', () => {
+      const note = noteContent.value;
+      alert(Note saved: ${note});
+    });
+  </script>
+</body>
+
+</html>
